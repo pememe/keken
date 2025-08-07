@@ -44,9 +44,9 @@ proxies:
     servername: id2-ray.ipservers.xyz
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /Multi-Path
       headers:
-        Host: id2-ray.ipservers.xyz
+        Host: vmess-grpc
     udp: true
   - name: BIMBEL
     server: bimbel.ruangguru.com
@@ -54,14 +54,14 @@ proxies:
     type: vmess
     uuid: 2b5f4008-2e41-4008-8e2b-f9dff0f0fbae
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: id1vless.ipservers.xyz
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /Multi-Path
       headers:
-        Host: id1vless.ipservers.xyz
+        Host: vmess-grpc
     udp: true
   - name: AKUN3
     server: quiz.int.vidio.com
@@ -167,3 +167,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
